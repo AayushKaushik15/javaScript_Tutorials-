@@ -81,10 +81,35 @@ let arr1 = ["Items1", "items2"];
 //todo spread operator
 //clone created
 // let arr2 = [...arr1] // new array created ['Items1', 'items2']
-let arr2 = [...arr1].concat(['item3', 'item4']) 
-//['Items1', 'items2', 'item3', 'item4']
-arr1.push("item3")
-console.log(arr1);
-console.log(arr2);
-console.log(arr1 === arr2);
 
+let arr2 = [...arr1].concat(['item3', 'item4'])   //['Items1', 'items2', 'item3', 'item4']
+
+
+arr1.push("item3")
+// console.log(arr1);
+// console.log(arr2);
+// console.log(arr1 === arr2);
+
+
+
+
+
+
+
+//                            Array destructuring
+
+const myArr = ["value1", "value2","value3", "value4","value5","value6",]
+// const newmyArr = ["value4", "value5","value6"]
+// let myvar1 = myArr[1];
+// let myvar2 = myArr[2];
+
+
+
+let [e1, e2, e3, ...newlyArr] = myArr
+
+//...newlyArr rest all element add in this newlyArr
+//example "value4","value5","value6",
+
+
+// console.log(e1,e2, e3);  //value1 value2 value3
+// console.log(newlyArr);  //['value4', 'value5', 'value6']
