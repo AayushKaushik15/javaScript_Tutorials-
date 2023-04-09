@@ -113,3 +113,25 @@ let [e1, e2, e3, ...newlyArr] = myArr
 
 // console.log(e1,e2, e3);  //value1 value2 value3
 // console.log(newlyArr);  //['value4', 'value5', 'value6']
+
+
+
+
+
+
+
+
+
+
+
+//                          spread Operator
+
+// const arr1 = ["Ayush", "kaushik", "shashank", 15]
+// const arr2 = ["Lion", "snake", "Beer", "lizard"]
+
+// const cloneArr1 = [...arr1, ...arr2]
+
+// for (let i=0; i<=cloneArr1.length; i++) {
+//     console.log(cloneArr1[i]);   
+    //(8) ['Ayush', 'kaushik', 'shashank', 15, 'Lion', 'snake', 'Beer', 'lizard']
+// }

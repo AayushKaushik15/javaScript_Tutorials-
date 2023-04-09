@@ -19,14 +19,3 @@
 
 
 
-
-let median = (num1, num2) => {
-
-    let concatArr = num1.concat(num2);
-
-    let mid = Math.floor((concatArr.length /2));
-
-    console.log(concatArr[mid] + " mid element");
-}
-
-median([1,2,3], [4,5,6,7,])
