@@ -129,14 +129,96 @@ const obj3 = {...obj1, ...obj2}  // cloning
 // console.log(obj3);   //{name: 'ayush', age: 26, city: 'delhi', address: 'ASdas'}
 
 
-//                              CONVERT arrays into objects
+//                              object inside array
 
 
-const arr_O = ["do", "not", "code", "while" , "eating"]
 
 
-const object_active = {
-    fist_name : "Ayush",
-    last_name : "kaushik",
-    age : 21,
+
+
+
+
+// const arr_O = ["do", "not", "code", "while" , "eating"]
+
+
+const user = [
+    {name : "ayush", age : 21},
+    {name : "ayush", age : 21},
+    {name : "ayush", age : 21},
+    {name : "ayush", age : 21}
+]
+
+// console.log(user[0].name) // ayush
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//                                    Map data Structure
+
+
+
+
+
+
+//                                        Optional chaining
+
+
+const user1 = {
+    firstName : "ayush",
+    // age : 21   // undefined
+
+    // address : {houseNum : 153}
 }
+
+// ? use is if there is user then give username and if there is no user
+//? then give me undefined not an error
+
+// console.log(user1.firstName)  //ayush
+// console.log(user1?.address?.houseNum)   //undefined
+
+
+
+
+
+
+// methods inside objects
+
+
+function greeting () {
+    return `Hi ${this.name}, your age is ${this.age} and you are eligible "driving"`
+}
+
+
+const person = {
+    name : "ayush",
+    age : 21,
+    details : greeting
+}
+const person1 = {
+    name : "shashank",
+    age : 30,
+    details : greeting
+}
+const person2 = {
+    name : "shubham",
+    age : 17,
+    details : greeting
+}
+
+console.log(person.details())
+console.log(person1.details())
+console.log(person2.details())
