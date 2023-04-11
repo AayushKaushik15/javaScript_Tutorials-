@@ -53,7 +53,7 @@ const arrowFunction = () => {
 
 const isEven = (number) => number % 2 === 0;
 
-console.log(isEven(2));
+// console.log(isEven(2));
 
 // function arrowFunction () {    //you cannot make same make function
 //     return "hello"
@@ -196,14 +196,45 @@ function myFun(a,b,...c) {
 
 
 
-//                                           parm destrructuring
 
-const person = {
-    name  : "aayush",
-    age : 24,
-    gender : "male"
+
+
+
+
+
+
+
+
+//                                                  Function returning function
+
+
+const returnFunction = () => {
+
+    const myFunction1 = () => "hi"
+
+    return myFunction1;
 
 }
+
+let display = returnFunction();
+
+// console.log(display())    //hi
+ 
+
+
+
+
+
+
+
+//                                           parm destrructuring
+
+// const person = {
+//     name  : "aayush",
+//     age : 24,
+//     gender : "male"
+
+// }
 
 function printDetails (obj) {
     console. log(obj. firstName);
@@ -216,4 +247,4 @@ function printDetails (obj) {
 //     console.log(gender)
 // }
 
-console.log(person)
+// console.log(person)
