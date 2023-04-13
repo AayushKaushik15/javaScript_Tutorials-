@@ -195,30 +195,21 @@ const user1 = {
 
 
 
-// methods inside objects
+// function inside objects
 
 
-function greeting () {
-    return `Hi ${this.name}, your age is ${this.age} and you are eligible "driving"`
-}
-
-
-const person = {
+const object1 = {
     name : "ayush",
     age : 21,
-    details : greeting
-}
-const person1 = {
-    name : "shashank",
-    age : 30,
-    details : greeting
-}
-const person2 = {
-    name : "shubham",
-    age : 17,
-    details : greeting
+
+    about : function () {
+        console.log(this.name, this.age)
+    }
 }
 
-console.log(person.details())
-console.log(person1.details())
-console.log(person2.details())
+const object2 = {
+    name : "shashank",
+    age  : 22
+}
+
+// object1.about.call(object2);   // shashank 22
