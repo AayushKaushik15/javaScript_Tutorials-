@@ -1,112 +1,31 @@
 * {
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "poppins";
+    font-family: "Poppins";
+    list-style: none;
 }
 
-body {
-    background-color: 
-    #181a1f;
-    /* background-color: #24252A; */
+label {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-nav {
-    background-color: #1d8aff;
-    height: 80px;
-    width: 100%;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #537FE7;
 }
 
-label.logo {
-    color: #fff;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-
-}
-
-nav ul li a{
-    color: #fff;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    border-radius: 3px;
-}
-a.active, a:hover {
-    background-color: #0a5aae;
-    transform: 0.5s ease;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+ul li {
+    display: inline;
+    padding: 0 10px;
     cursor: pointer;
 }
 
-#check {
-    display: none;
-}
-
-@media (max-width : 952px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width : 858px) {
-    .checkbtn {
-        display: block;
-    }
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s ease;
-    }
-    nav ul li {
-        display: block;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-    a:hover, a:active {
-        background: none;
-        color: #0082e6;
-    }
-
-    #check:checked ~ ul {
-        left: 0;
-    }
-}
-
-
-section {
-    background: url();
+.active, li:hover {
+    background-color: #0938a7;
+    padding: 9px;
 }

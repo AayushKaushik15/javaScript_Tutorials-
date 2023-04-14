@@ -43,19 +43,19 @@
 
     <section class="input-form">
 
-        <h2>Sign Up</h2>
-        <form action="act" class="functional">
+        <h2 class="sign">Sign Up</h2>
+        <form action="#" class="functional">
             <div class="form-details">
                 <label for="text">First name</label>
-                <input type="text" id="text" placeholder="First Name">
+                <input type="text" id="text" placeholder="First Name" required>
             </div>
             <div class="form-details">
                 <label for="last">last name</label>
-                <input type="text" id="last" placeholder="Last Name">
+                <input type="text" id="last" placeholder="Last Name" required>
             </div>
             <div class="form-details">
                 <label for="number">mobile number</label>
-                <input type="number" id="number" placeholder="Number">
+                <input type="number" id="number" placeholder="Number" required>
             </div>
             <div class="form-details">
                 <label for="gmail">Email id</label>
@@ -64,10 +64,10 @@
 
             <div class="form-details">
                 <label for="">select role</label>
-                <select name="" id="">
+                <select name="" id="" required>
                     <option value="">web development</option>
                     <option value="">UI & UX Designer</option>
-                    <option value="">Frontend developer</option>
+                    <option value="fd">Frontend developer</option>
                     <option value="">backend developer</option>
                     <option value="">full stack developer</option>
                 </select>
@@ -76,18 +76,22 @@
 
             <div class="form-details">
                 <label for="dob">Date of birth</label>
-                <input type="date" id="dob" class="dob" placeholder="abc@gmail.com">
+                <input type="date" id="dob" class="dob" required placeholder="abc@gmail.com">
             </div>
 
            
         
+            <button class="submit" onclick="change()">Submit Form</button>
+            <!-- <input type="reset" value="Reset" class="submit"> -->
         </form>
 
         
 
-        <button class="submit">Submit Form</button>
 
     </section>
+
+    <script src="app.js"></script>
+
 
 </body>
 </html>
